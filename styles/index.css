@@ -56,3 +56,12 @@ body {
 .text-color-primary {
     color: var(--primary-color);
 }
+.text-color-white {
+    color: var(--lightest-slate);
+}
+.section-intro {
+    height: 90vh;
+}
+.section-intro-content {
+    padding-top: 160px;
+}
