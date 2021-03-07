@@ -6,10 +6,9 @@ import EmailIcon from '@/components/icons/email';
 
 export const links: HeaderLinkType[] = [
   { name: 'Experience', path: '#experience' },
-  { name: 'Projects', path: '#projects' },
+  { name: 'Work', path: '#work' },
   { name: 'Stack', path: '#stack' },
   { name: 'Blog', path: '#blog' },
-  { name: 'Contact', path: '#contact' },
 ];
 
 export const socialLinks: SocialLinkType[] = [
