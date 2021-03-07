@@ -18,7 +18,7 @@ import MicroserviceIcon from '@/components/icons/microservice';
 const Stack = () => {
   return (
     <Section id="stack" title="Tech Stack">
-      <div className="mx-auto mt-8 grid grid-cols-2 gap-8 md:grid-cols-3 xl:grid-cols-4">
+      <div className="mx-auto mt-8 mb-12 grid grid-cols-2 gap-8 md:grid-cols-3 xl:grid-cols-4">
         <StackItem title="Node.js">
           <NodeIcon />
         </StackItem>

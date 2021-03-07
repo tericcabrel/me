@@ -5,6 +5,7 @@ import Intro from '@/components/sections/intro';
 import Experience from '@/components/sections/experience';
 import Education from '@/components/sections/education';
 import Stack from '@/components/sections/stack';
+import Blog from '@/components/sections/blog';
 
 const IndexPage = () => (
   <Layout title="Eric Cabrel TIOGO">
@@ -12,6 +13,7 @@ const IndexPage = () => (
     <Experience />
     <Education />
     <Stack />
+    <Blog />
   </Layout>
 );
 
