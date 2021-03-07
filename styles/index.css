@@ -11,6 +11,7 @@
     --slate: #8892b0;
     --light-slate: #a8b2d1;
     --lightest-slate: #ccd6f6;
+    --primary-color: #009efa;
 }
 
 html {
@@ -41,4 +42,17 @@ body {
     font-family: 'Inter', -apple-system, system-ui, sans-serif;
     font-size: 16px;
     line-height: 1.3;
+}
+
+.header ul li:last-child {
+    padding-right: 0;
+}
+.container {
+    margin-top: 91px;
+}
+.container .content {
+    max-width: 1000px;
+}
+.text-color-primary {
+    color: var(--primary-color);
 }
