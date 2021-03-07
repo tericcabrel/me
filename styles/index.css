@@ -4,3 +4,41 @@
 /* purgecss end ignore */
 
 @tailwind utilities;
+
+:root {
+    --dark-navy: #020c1b;
+    --navy: #0a192f;
+    --slate: #8892b0;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+}
+
+html {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+::selection {
+    background-color: var(--slate);
+    color: var(--lightest-slate);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    background-color: var(--navy);
+    color: var(--slate);
+    font-family: 'Inter', -apple-system, system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 1.3;
+}
