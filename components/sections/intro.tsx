@@ -1,6 +1,6 @@
 import React from 'react';
 import { socialLinks } from '../../data/links';
-import CustomLink from '@/components/common/CustomLink';
+import CustomLink from '@/components/common/customLink';
 
 const Intro = () => {
   return (
