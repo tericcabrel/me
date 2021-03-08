@@ -1,10 +1,13 @@
 import { BlogPost } from '../../types';
+import { formatDate, pickIconFromTags } from '@/utils/helpers';
 
 type Props = {
   post: BlogPost;
 };
 
 const Post = ({ post }: Props) => {
+  const I = pickIconFromTags(post.tags);
+
   return (
     <div>
       <div className="rounded-lg overflow-hidden">
@@ -21,15 +24,10 @@ const Post = ({ post }: Props) => {
               {post.title}
             </h3>
             <div className="text-gray-600 text-sm font-medium flex mb-4 mt-2">
-              <p>Published at: {post.published_at}</p>
+              <p>Published date: {formatDate(post.published_at)}</p>
             </div>
-            {/*<p className="leading-7">
-              High quality notepad mockup in a huge resolution and with changeable everything.
-            </p>*/}
             <div className="mt-10 flex justify-between items-center">
-              <div>
-                <img src="https://collect.criggzdesign.com/wp-content/uploads/2020/07/Ps.svg" alt="" className="w-6" />
-              </div>
+              <div>{<I height={24} width={24} />}</div>
               <a href={post.url} className="flex items-center" target="_blank" rel="noopener noreferrer">
                 <p className="mr-4">Read more</p>
                 <svg xmlns="http://www.w3.org/2000/svg" width="14.125" height="13.358" viewBox="0 0 14.125 13.358">
