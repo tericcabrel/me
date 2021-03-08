@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { PostOrPage } from '@tryghost/content-api';
 
 export type HeaderLinkType = {
   name: string;
@@ -15,4 +16,8 @@ export type SocialLinkType = {
   path: string;
   width?: number;
   height?: number;
+};
+
+export type BlogPost = Pick<PostOrPage, 'title' | 'url' | 'uuid' | 'feature_image' | 'published_at'> & {
+  tags: string[];
 };
