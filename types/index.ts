@@ -21,3 +21,11 @@ export type SocialLinkType = {
 export type BlogPost = Pick<PostOrPage, 'title' | 'url' | 'uuid' | 'feature_image' | 'published_at'> & {
   tags: string[];
 };
+
+export type ProjectData = {
+  title: string;
+  description: string;
+  stacks: string[];
+  demoLink: string | null;
+  githubLink: string;
+};
