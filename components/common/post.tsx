@@ -36,7 +36,7 @@ const Post = ({ post }: Props) => {
                       id="Path_7"
                       data-name="Path 7"
                       d="M14.189,10.739H3V9.2H14.189L9.361,4.378l1.085-1.085,6.679,6.679-6.679,6.679L9.361,15.566Z"
-                      fill="#1d1d1d"
+                      fill="#009efa"
                       fillRule="evenodd"
                     />
                   </g>
