@@ -6,7 +6,7 @@ import { projects } from '../../data/projects';
 const Work = () => {
   return (
     <Section id="work" title="Some Things I’ve Built">
-      <div className="w-full mx-auto my-10 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
+      <div className="w-full mx-auto mt-10 mb-16 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-2">
         {projects.map((project) => (
           <Project key={project.title} project={project} />
         ))}

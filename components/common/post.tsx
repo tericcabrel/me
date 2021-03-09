@@ -24,7 +24,7 @@ const Post = ({ post }: Props) => {
               {post.title}
             </h3>
             <div className="text-gray-600 text-sm font-medium flex mb-4 mt-2">
-              <p>Published date: {formatDate(post.published_at)}</p>
+              <p>Publish date: {formatDate(post.published_at)}</p>
             </div>
             <div className="mt-10 flex justify-between items-center">
               <div>{<I height={24} width={24} />}</div>
