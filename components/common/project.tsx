@@ -15,7 +15,7 @@ const Project = ({ project }: ProjectProps) => {
         <div className="text-color-white">
           <WebIcon height={32} width={32} />
         </div>
-        <div className="flex">
+        <div className="flex icon-header">
           <CustomLink path={project.githubLink}>
             <GithubIcon width={24} height={24} />
           </CustomLink>

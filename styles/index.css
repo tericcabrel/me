@@ -83,6 +83,6 @@ body {
     transform: translateY(-5px);
 }
 
-.project .icon-header svg:hover {
+.project:hover .icon-header svg {
     color: var(--primary-color);
 }
