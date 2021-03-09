@@ -1,15 +1,15 @@
 import React from 'react';
-
 import Link from 'next/link';
-import Image from 'next/image';
+
 import { links } from '../data/links';
+import Logo from '@/components/icons/logo';
 
 const Header = () => {
   return (
     <header className="header flex fixed top-0 w-full py-4 px-12 justify-between items-center h-auto">
       <div>
         <a href="/">
-          <Image src="/logo.png" alt="Teco logo" width={50} height={50} />
+          <Logo />
         </a>
       </div>
       <nav>
