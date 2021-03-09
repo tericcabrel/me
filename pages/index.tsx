@@ -7,6 +7,8 @@ import Experience from '@/components/sections/experience';
 import Education from '@/components/sections/education';
 import Stack from '@/components/sections/stack';
 import Blog from '@/components/sections/blog';
+import Work from '@/components/sections/work';
+
 import { fetchBlogPosts } from '@/utils/blogPosts';
 import { BlogPost } from '../types';
 
@@ -19,6 +21,7 @@ const IndexPage = ({ posts }: IndexPageProps) => (
     <Intro />
     <Experience />
     <Education />
+    <Work />
     <Stack />
     {posts && <Blog posts={posts} />}
   </Layout>

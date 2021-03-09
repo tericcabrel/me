@@ -1,5 +1,6 @@
-import Section from '@/components/common/section';
 import { BlogPost } from '../../types';
+
+import Section from '@/components/common/section';
 import Post from '@/components/common/post';
 
 type BlogProps = {
