@@ -5,10 +5,10 @@ import TwitterIcon from '@/components/icons/twitter';
 import EmailIcon from '@/components/icons/email';
 
 export const links: HeaderLinkType[] = [
-  { name: 'Experience', path: '#experience' },
-  { name: 'Work', path: '#work' },
-  { name: 'Stack', path: '#stack' },
-  { name: 'Blog', path: '#blog' },
+  { name: 'Experience', path: 'experience' },
+  { name: 'Work', path: 'work' },
+  { name: 'Stack', path: 'stack' },
+  { name: 'Blog', path: 'blog' },
 ];
 
 export const socialLinks: SocialLinkType[] = [
