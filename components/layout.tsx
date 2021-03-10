@@ -48,11 +48,14 @@ const Layout = ({ children, title = 'Eric Cabrel TIOGO' }: Props) => (
       <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,800,800i" rel="stylesheet" />
       <link rel="icon" href="/favicon.svg" />
     </Head>
-    <Header />
-    <div className="container md:container md:mx-auto mt-12">
-      <div className="content mt-6 mx-auto">{children}</div>
+    <div id="root">
+      <Header />
+
+      <div className="container md:container md:mx-auto mt-12">
+        <div className="content mt-6 mx-auto">{children}</div>
+      </div>
+      <Footer />
     </div>
-    <Footer />
   </div>
 );
 
