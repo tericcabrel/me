@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useState, MouseEvent } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 import { links } from '../data/links';
 import Logo from '@/components/icons/logo';
+import HamburgerIcon from '@/components/icons/hamburger';
+import CloseIcon from '@/components/icons/close';
 
 const Header = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const scrollToTop = () => {
     scroll.scrollToTop();
+  };
+
+  const toggleNav = (e: MouseEvent<any>, state: boolean) => {
+    e.preventDefault();
+    setIsOpen(state);
   };
 
   return (
@@ -16,7 +25,17 @@ const Header = () => {
           <Logo />
         </a>
       </div>
-      <nav>
+      <div className="menu-button">
+        <a href="#" className="nav-icon" onClick={(e) => toggleNav(e, true)}>
+          <HamburgerIcon />
+        </a>
+      </div>
+      <nav className={`nav-menu ${isOpen ? 'nav-open' : 'nav-close'}`}>
+        <div className="nav-button">
+          <a href="#" className="nav-icon" onClick={(e) => toggleNav(e, false)}>
+            <CloseIcon />
+          </a>
+        </div>
         <ul>
           {links.map((link) => (
             <li key={link.name} className="inline-block font-bold px-4">
