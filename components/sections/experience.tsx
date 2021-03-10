@@ -9,7 +9,7 @@ const Li = ({ children }: PropsWithChildren<ReactNode>) => <li className="mb-2">
 const Experience = () => {
   return (
     <Section id="experience" title="Experience">
-      <div className="relative w-100 m-8">
+      <div className="experience relative w-100 m-8">
         <div className="border-r-2 border-gray-500 absolute h-full top-0" style={{ left: 15 }} />
         <ul className="list-none m-0 p-0">
           <TimelineItem extraTitle="Ovrsea" subTitle="October 2020 - Present" title="Full Stack Software Engineer">

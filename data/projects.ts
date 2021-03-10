@@ -5,7 +5,7 @@ export const projects: ProjectData[] = [
     title: 'User authentication with smartcard and fingerprint',
     description:
       'Stores user information in a smart card and authenticates with the fingerprint stored in the smart card.',
-    stacks: ['Javacard', 'Spring Boot', 'RabbitMQ', 'MySQL', 'Socket.io'],
+    stacks: ['Javacard', 'Spring Boot', 'MySQL', 'RabbitMQ', 'Socket.io'],
     demoLink: 'https://www.youtube.com/watch?v=QcHWxv8MELw',
     githubLink: 'https://github.com/tericcabrel/smartcard-with-fingerprint-auth',
   },

@@ -86,3 +86,36 @@ body {
 .project:hover .icon-header svg {
     color: var(--primary-color);
 }
+
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 25px;
+    }
+    .section-intro {
+        height: 90vh;
+    }
+    .section-intro-content {
+        padding-top: 25px;
+    }
+    .intro-name {
+        font-size: 1.9rem;
+    }
+    .intro-quote {
+        font-size: 1.6rem;
+    }
+    .intro-text {
+        margin-bottom: .65rem;
+    }
+    .intro-social {
+        margin-top: 2rem;
+    }
+    .experience {
+        margin: 0;
+    }
+    .education {
+        margin: 0 0 4rem 0;
+    }
+    .section-title {
+        font-size: 1.75rem;
+    }
+}
