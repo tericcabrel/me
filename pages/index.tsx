@@ -29,7 +29,7 @@ const IndexPage = ({ posts }: IndexPageProps) => (
 
 export default IndexPage;
 
-export const getStaticProps: GetStaticProps = async () => {
+export const getServerSideProps: GetStaticProps = async () => {
   const posts = await fetchBlogPosts();
 
   return { props: { posts } };
