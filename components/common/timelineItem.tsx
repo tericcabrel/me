@@ -10,7 +10,7 @@ const TimelineItem = ({ children, extraTitle, subTitle, title }: PropsWithChildr
   return (
     <li className="mb-2">
       <div className="flex items-center mb-1">
-        <div className="bg-gray-500 rounded-full h-8 w-8" />
+        <div className="bg-slate rounded-full h-8 w-8" />
         <div className="flex-1 ml-4 font-bold text-color-white text-xl">
           {title}
           {extraTitle && <span className="text-color-primary">{` - ${extraTitle}`}</span>}

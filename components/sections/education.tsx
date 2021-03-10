@@ -5,7 +5,7 @@ const Education = () => {
   return (
     <Section id="education" title="Education" showLine={false}>
       <div className="education relative w-100 mx-8 mt-8 mb-16">
-        <div className="border-r-2 border-gray-500 absolute h-full top-0" style={{ left: 15 }} />
+        <div className="timeline-line border-r-2 border-gray-500 absolute h-full top-0" />
         <ul className="list-none m-0 p-0">
           <TimelineItem subTitle="September 2016 - August 2018" title="Master Degree in Computer Science">
             <div className="mb-1">Agile Methodology - Project Management - Software Engineering - CI/CD</div>

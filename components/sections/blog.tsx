@@ -9,7 +9,7 @@ type BlogProps = {
 
 const Blog = ({ posts }: BlogProps) => {
   return (
-    <Section id="blog" title="My Blog Latest Articles">
+    <Section id="blog" title="My Latest Articles">
       <div className="mx-auto mt-10 mb-20 grid grid-cols-1 gap-8 md:grid-cols-2 xl:grid-cols-3">
         {posts.map((post) => (
           <Post key={post.uuid} post={post} />

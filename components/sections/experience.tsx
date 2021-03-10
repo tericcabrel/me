@@ -10,7 +10,7 @@ const Experience = () => {
   return (
     <Section id="experience" title="Experience">
       <div className="experience relative w-100 m-8">
-        <div className="border-r-2 border-gray-500 absolute h-full top-0" style={{ left: 15 }} />
+        <div className="timeline-line border-r-2 border-gray-500 absolute h-full top-0" />
         <ul className="list-none m-0 p-0">
           <TimelineItem extraTitle="Ovrsea" subTitle="October 2020 - Present" title="Full Stack Software Engineer">
             Working on web application that aim to automate the logistic and supply chain of companies around the world.
