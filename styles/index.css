@@ -69,11 +69,18 @@ body {
 .text-color-white {
     color: var(--lightest-slate);
 }
+.bg-slate {
+    background-color: var(--lightest-slate);
+}
 .section-intro {
     height: 90vh;
 }
 .section-intro-content {
     padding-top: 160px;
+}
+.timeline-line {
+    border-color: var(--lightest-slate);
+    left: 15px;
 }
 
 .project {
@@ -89,6 +96,10 @@ body {
 }
 
 @media screen and (max-width: 480px) {
+    .header ul li {
+        padding-left: 0;
+        padding-right: 0;
+    }
     .section-intro {
         height: 90vh;
     }
@@ -123,7 +134,7 @@ body {
     .header .nav-menu {
         position: fixed;
         top: 0;
-        background-color: rgba(12, 34, 66, .7);
+        background-color: rgba(12, 34, 66, .8);
         width: 100%;
         height: 100vh;
         display: flex;

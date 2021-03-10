@@ -35,12 +35,14 @@ const Project = ({ project }: ProjectProps) => {
         <p className="project-description text-color-light-slate">{project.description}</p>
       </div>
 
-      <div className="project-stack mt-6 text-sm">
-        {project.stacks.map((stack) => (
-          <span key={stack} className="mr-4">
-            {stack}
-          </span>
-        ))}
+      <div className="project-stack mt-6 text-sm flex">
+        <ul>
+          {project.stacks.map((stack) => (
+            <li key={stack} className="mr-4 inline-block">
+              {stack}
+            </li>
+          ))}
+        </ul>
       </div>
     </div>
   );

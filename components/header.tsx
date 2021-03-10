@@ -1,13 +1,15 @@
-import React, { useState, MouseEvent } from 'react';
+import React, { useState, MouseEvent, useRef } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 import { links } from '../data/links';
 import Logo from '@/components/icons/logo';
 import HamburgerIcon from '@/components/icons/hamburger';
 import CloseIcon from '@/components/icons/close';
+import useOnClickOutside from '@/utils/hooks/useOnClickOutside';
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const wrapperRef = useRef();
 
   const scrollToTop = () => {
     scroll.scrollToTop();
@@ -17,6 +19,8 @@ const Header = () => {
     e.preventDefault();
     setIsOpen(state);
   };
+
+  useOnClickOutside(wrapperRef, () => setIsOpen(false));
 
   return (
     <header className="header flex fixed top-0 w-full py-4 px-12 justify-between items-center h-auto">
@@ -36,7 +40,8 @@ const Header = () => {
             <CloseIcon />
           </a>
         </div>
-        <ul>
+        {/* @ts-ignore */}
+        <ul ref={wrapperRef}>
           {links.map((link) => (
             <li key={link.name} className="inline-block font-bold px-4">
               <Link

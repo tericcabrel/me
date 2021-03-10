@@ -12,7 +12,7 @@ export const projects: ProjectData[] = [
   {
     title: 'MERN Starter Project',
     description: 'A starter project for React, Node.js, Express and MongoDB Application.',
-    stacks: ['Node.js', 'React', 'Express', 'MongoDB'],
+    stacks: ['Node.js', 'React', 'Express', 'MongoDB', 'Typescript'],
     demoLink: 'https://www.youtube.com/watch?v=w4-IBA2bRLo&feature=youtu.be',
     githubLink: 'https://github.com/tericcabrel/react-starter',
   },
@@ -27,7 +27,7 @@ export const projects: ProjectData[] = [
   {
     title: 'Twitter Bot for Dev Community',
     description: 'Twitter bot for the hashtag #caparledev used in french community of Central Africa.',
-    stacks: ['Node.js', 'MongoDB', 'Docker'],
+    stacks: ['Node.js', 'MongoDB', 'Docker', 'Typescript'],
     demoLink: 'https://twitter.com/caparledev',
     githubLink: 'https://github.com/osscameroon/caparledev-bot',
   },
