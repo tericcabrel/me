@@ -1,5 +1,6 @@
 {
-  "name": "with-typescript",
+  "name": "tericcabrel",
+  "description": "My personal website",
   "version": "1.0.0",
   "scripts": {
     "dev": "next",
