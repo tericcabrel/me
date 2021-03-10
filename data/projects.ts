@@ -17,7 +17,7 @@ export const projects: ProjectData[] = [
     githubLink: 'https://github.com/tericcabrel/react-starter',
   },
   {
-    title: 'Authentication and Authorization API',
+    title: 'User authentication and authorization API',
     description:
       'A Backend service API for managing users, roles and permissions. Also token generation and validation.',
     stacks: ['Java', 'Spring Boot', 'MongoDB', 'Redis', 'Docker'],
