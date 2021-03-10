@@ -15,22 +15,6 @@
     --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-html {
-    box-sizing: border-box;
-    width: 100%;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-::selection {
-    background-color: var(--slate);
-    color: var(--lightest-slate);
-}
-
 #root {
     margin: 0;
     width: 100%;
