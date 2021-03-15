@@ -21,7 +21,9 @@ const Post = ({ post }: Props) => {
         <div className="relative bg-white">
           <div className="py-10 px-8">
             <h3 className="text-2xl font-bold" style={{ height: 100, overflow: 'hidden' }}>
+              <a href={post.url} target="_blank" rel="noopener noreferrer">
               {post.title}
+              </a>
             </h3>
             <div className="text-gray-600 text-sm font-medium flex mb-4 mt-2">
               <p>Publish date: {formatDate(post.published_at)}</p>
