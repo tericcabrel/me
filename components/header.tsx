@@ -23,35 +23,35 @@ const Header = () => {
   useOnClickOutside(wrapperRef, () => setIsOpen(false));
 
   return (
-    <header className="header flex fixed top-0 w-full py-4 px-12 justify-between items-center h-auto">
+    <header className="w-full flex py-4 justify-between items-center h-auto">
       <div>
         <a href="#" onClick={() => scrollToTop()}>
           <Logo />
         </a>
       </div>
       <div className="menu-button">
-        <a href="#" className="nav-icon" onClick={(e) => toggleNav(e, true)}>
+        <a className="nav-icon" href="#" onClick={(e) => toggleNav(e, true)}>
           <HamburgerIcon />
         </a>
       </div>
       <nav className={`nav-menu ${isOpen ? 'nav-open' : 'nav-close'}`}>
         <div className="nav-button">
-          <a href="#" className="nav-icon" onClick={(e) => toggleNav(e, false)}>
+          <a className="nav-icon" href="#" onClick={(e) => toggleNav(e, false)}>
             <CloseIcon />
           </a>
         </div>
         {/* @ts-ignore */}
         <ul ref={wrapperRef}>
           {links.map((link) => (
-            <li key={link.name} className="inline-block font-bold px-4">
+            <li className="inline-block font-bold px-4" key={link.name}>
               <Link
-                className="cursor-pointer"
                 activeClass="active"
-                to={link.path}
-                spy={true}
-                smooth={true}
-                offset={-100}
+                className="cursor-pointer"
                 duration={700}
+                offset={-100}
+                smooth={true}
+                spy={true}
+                to={link.path}
               >
                 <span className="text-white">{link.name}</span>
               </Link>

@@ -17,42 +17,40 @@ const description =
 const Layout = ({ children, title = 'Eric Cabrel TIOGO' }: Props) => (
   <div>
     <NextSeo
-      title={title}
-      description={description}
       canonical={url}
+      description={description}
       openGraph={{
-        url,
-        title,
         description,
         images: [
           {
+            alt: 'Og Image Alt',
+            height: 640,
             url: `${url}/og.png`,
             width: 1280,
-            height: 640,
-            alt: 'Og Image Alt',
           },
         ],
         site_name: 'Eric Cabrel TIOGO',
+        title,
+        url,
       }}
+      title={title}
       twitter={{
+        cardType: 'summary_large_image',
         handle: '@tericcabrel',
         site: '@tericcabrel',
-        cardType: 'summary_large_image',
       }}
     />
     <Head>
       <title>{title}</title>
       <meta charSet="utf-8" />
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="theme-color" content="#009efa" />
-      <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,800,800i" rel="stylesheet" />
-      <link rel="icon" href="/favicon.svg" />
+      <meta content="initial-scale=1.0, width=device-width" name="viewport" />
+      <meta content="#009efa" name="theme-color" />
+      <link href="/favicon.svg" rel="icon" />
     </Head>
     <div id="root">
-      <Header />
-
-      <div className="container md:container md:mx-auto mt-12">
-        <div className="content mt-6 mx-auto">{children}</div>
+      <div className="max-w-screen-md md:mx-auto">
+        <Header />
+        <div className="mt-6 mx-auto">{children}</div>
       </div>
       <Footer />
     </div>
