@@ -19,3 +19,5 @@ export const pickIconFromTags = (tags: string[]) => {
 
   return iconMap.default;
 };
+
+export const isProduction = () => process.env.NODE_ENV === 'production';

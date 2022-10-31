@@ -1,8 +1,5 @@
-/* purgecss start ignore */
 @tailwind base;
 @tailwind components;
-/* purgecss end ignore */
-
 @tailwind utilities;
 
 :root {
@@ -28,22 +25,6 @@
     font-size: 16px;
     line-height: 1.3;
 }
-
-.header {
-    background-color: var(--navy);
-    z-index: 1;
-}
-
-.header ul li:last-child {
-    padding-right: 0;
-}
-.container {
-    margin-top: 91px;
-    padding: 0 25px;
-}
-.container .content {
-    max-width: 1000px;
-}
 .text-color-primary {
     color: var(--primary-color);
 }
@@ -56,17 +37,6 @@
 .bg-slate {
     background-color: var(--lightest-slate);
 }
-.section-intro {
-    height: 90vh;
-}
-.section-intro-content {
-    padding-top: 160px;
-}
-.timeline-line {
-    border-color: var(--lightest-slate);
-    left: 15px;
-}
-
 .project {
     background-color: #0C2242;
     transition: var(--transition);
