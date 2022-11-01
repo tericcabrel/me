@@ -3,10 +3,10 @@ import { IconProps } from '../../types';
 const EmailIcon = ({ height = 50, width = 50 }: IconProps) => {
   return (
     <svg
-      id="Capa_1"
       enableBackground="new 0 0 479.058 479.058"
       fill="#ccd6f6"
       height={height}
+      id="Capa_1"
       viewBox="0 0 479.058 479.058"
       width={width}
       xmlns="http://www.w3.org/2000/svg"

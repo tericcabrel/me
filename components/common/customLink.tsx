@@ -4,7 +4,7 @@ import Link from 'next/link';
 const CustomLink = ({ children, path }: PropsWithChildren<{ path: string }>) => {
   return (
     <Link href={path}>
-      <a target="_blank" rel="noopener noreferrer">
+      <a rel="noopener noreferrer" target="_blank">
         {children}
       </a>
     </Link>

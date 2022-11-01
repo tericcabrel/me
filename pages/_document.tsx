@@ -8,7 +8,10 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,800,800i" rel="stylesheet" />
+          <link
+            href="https://fonts.googleapis.com/css?family=Inter:400,400i,800,800i&display=optional"
+            rel="stylesheet"
+          />
           <LoadAnalytic />
         </Head>
         <body>

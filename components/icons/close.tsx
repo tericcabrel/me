@@ -4,7 +4,7 @@ import { IconProps } from '../../types';
 
 const CloseIcon = ({ height = 24, width = 24 }: IconProps) => {
   return (
-    <svg x="0px" y="0px" viewBox="0 0 47.971 47.971" width={width} height={height}>
+    <svg height={height} viewBox="0 0 47.971 47.971" width={width} x="0px" y="0px">
       <g>
         <path
           d="M28.228,23.986L47.092,5.122c1.172-1.171,1.172-3.071,0-4.242c-1.172-1.172-3.07-1.172-4.242,0L23.986,19.744L5.121,0.88

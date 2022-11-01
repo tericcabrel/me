@@ -17,13 +17,13 @@ const Project = ({ project }: ProjectProps) => {
         </div>
         <div className="flex icon-header">
           <CustomLink path={project.githubLink}>
-            <GithubIcon width={24} height={24} />
+            <GithubIcon height={24} width={24} />
           </CustomLink>
           {project.demoLink && (
             <>
               <div className="p-2" />
               <CustomLink path={project.demoLink}>
-                <ExternalIcon width={24} height={24} />
+                <ExternalIcon height={24} width={24} />
               </CustomLink>
             </>
           )}
@@ -38,7 +38,7 @@ const Project = ({ project }: ProjectProps) => {
       <div className="project-stack mt-6 text-sm flex">
         <ul>
           {project.stacks.map((stack) => (
-            <li key={stack} className="mr-4 inline-block">
+            <li className="mr-4 inline-block" key={stack}>
               {stack}
             </li>
           ))}

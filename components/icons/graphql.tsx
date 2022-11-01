@@ -4,7 +4,7 @@ import { IconProps } from '../../types';
 
 const GraphqlIcon = ({ height = 64, width = 64 }: IconProps) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" width={width} height={height} viewBox="0 0 29.999 30" fill="#e10098">
+    <svg fill="#e10098" height={height} viewBox="0 0 29.999 30" width={width} xmlns="http://www.w3.org/2000/svg">
       <path d="M4.08 22.864l-1.1-.636L15.248.98l1.1.636z" />
       <path d="M2.727 20.53h24.538v1.272H2.727z" />
       <path d="M15.486 28.332L3.213 21.246l.636-1.1 12.273 7.086zm10.662-18.47L13.874 2.777l.636-1.1 12.273 7.086z" />
