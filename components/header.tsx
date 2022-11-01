@@ -22,8 +22,9 @@ const Header = () => {
 
   useOnClickOutside(wrapperRef, () => setIsOpen(false));
 
+  // @ts-ignore
   return (
-    <header className="w-full flex py-4 justify-between items-center h-auto">
+    <header className="header w-full flex py-4 justify-between items-center h-auto">
       <div>
         <a href="#" onClick={() => scrollToTop()}>
           <Logo />
@@ -44,6 +45,7 @@ const Header = () => {
         <ul ref={wrapperRef}>
           {links.map((link) => (
             <li className="inline-block font-bold px-4" key={link.name}>
+              {/* @ts-ignore */}
               <Link
                 activeClass="active"
                 className="cursor-pointer"

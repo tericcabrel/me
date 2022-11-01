@@ -8,7 +8,7 @@ type SectionProps = {
 
 const Section = ({ children, id, showLine = true, title }: PropsWithChildren<SectionProps>) => {
   return (
-    <section id={id} className="section">
+    <section className="section" id={id}>
       <div className="flex items-center mb-5">
         <div className="section-title text-color-white font-bold pr-6 text-4xl flex-initial">{title}</div>
         {showLine && <div className="border flex-auto mt-3" />}
