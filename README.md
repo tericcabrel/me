@@ -5,8 +5,8 @@ My personal website
 
 ## Stack
 * Typescript
-* Next.js
-* TailwindCSS
+* Next.js 12
+* Tailwind CSS
 * Deployed on Vercel
 
 ## Installation
@@ -18,6 +18,7 @@ cd my-personal-website
 
 cp .env.example .env.local
 
+# Update the environment variables with your own
 nano .env.local
 
 yarn install
