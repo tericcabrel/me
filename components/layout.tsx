@@ -12,7 +12,7 @@ type Props = {
 
 const url = process.env.NEXT_PUBLIC_WEB_URL;
 const description =
-  'I work on automating the supply chain of merchandises across the world. I enjoy sharing my knowledge, help people and contribute to open source projects';
+  "I'm interested in everything related to the backend, Observability, DevOps and Infrastructure as Code. I enjoy sharing my knowledge, help people and contribute to open source projects";
 
 const Layout = ({ children, title = 'Eric Cabrel TIOGO' }: Props) => (
   <div>
