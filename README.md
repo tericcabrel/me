@@ -1,5 +1,5 @@
 # My Personal Website
-My personal website inspired from [https://brittanychiang.com](https://brittanychiang.com)
+My personal website
 
 ![demo](https://raw.githubusercontent.com/tericcabrel/me/main/public/og.png)
 

@@ -11,22 +11,24 @@ type Props = {
 };
 
 const url = process.env.NEXT_PUBLIC_WEB_URL;
-const description =
-  "I'm interested in everything related to the backend, Observability, DevOps and Infrastructure as Code. I enjoy sharing my knowledge, help people and contribute to open source projects";
+const description = [
+  "I'm interested in Backend, DX, Observability, DevOps, and Infrastructure as Code.",
+  'I enjoy sharing my knowledge and contributing to open-source projects.',
+];
 
 const Layout = ({ children, title = 'Eric Cabrel TIOGO' }: Props) => (
   <div>
     <NextSeo
       canonical={url}
-      description={description}
+      description={description.join(' ')}
       openGraph={{
-        description,
+        description: description.join(' '),
         images: [
           {
             alt: 'Og Image Alt',
             height: 640,
             url: `${url}/og.png`,
-            width: 1280,
+            width: 1200,
           },
         ],
         site_name: 'Eric Cabrel TIOGO',
@@ -50,7 +52,7 @@ const Layout = ({ children, title = 'Eric Cabrel TIOGO' }: Props) => (
     <div id="root">
       <div className="max-w-screen-md md:mx-auto">
         <Header />
-        <div className="mt-6 mx-auto">{children}</div>
+        <div className="mt-6 mx-auto px-4">{children}</div>
       </div>
       <Footer />
     </div>

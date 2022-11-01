@@ -16,17 +16,17 @@ export const projects: ProjectData[] = [
     title: 'Sharingan',
   },
   {
+    demoLink: 'https://prolanghistory.com',
+    description: 'Get information about programming languages through REST API or GraphQL',
+    githubLink: 'https://github.com/osscameroon/prolang-api',
+    stacks: ['Node.js', 'GraphQL', 'MongoDB', 'TypeScript', 'Docker'],
+    title: 'Prolang',
+  },
+  {
     demoLink: 'https://www.youtube.com/watch?v=QcHWxv8MELw',
-    description: 'Authenticate a user with his fingerprint stored in the smart card',
+    description: 'Authenticate a user with his fingerprint stored in a smart card',
     githubLink: 'https://github.com/tericcabrel/smartcard-with-fingerprint-auth',
     stacks: ['Javacard', 'Spring Boot', 'MySQL', 'RabbitMQ', 'Socket.io'],
     title: 'Osiris',
-  },
-  {
-    demoLink: null,
-    description: 'A REST API for managing users, roles, permissions and authentication.',
-    githubLink: 'https://github.com/tericcabrel/spring-user-management',
-    stacks: ['Java', 'Spring Boot', 'MongoDB', 'Redis', 'Docker'],
-    title: 'User management API',
   },
 ];

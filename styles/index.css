@@ -37,6 +37,11 @@
 .bg-slate {
     background-color: var(--lightest-slate);
 }
+
+.header {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 .project {
     background-color: #0C2242;
     transition: var(--transition);
@@ -54,12 +59,6 @@
         padding-left: 0;
         padding-right: 0;
     }
-    .section-intro {
-        height: 90vh;
-    }
-    .section-intro-content {
-        padding-top: 25px;
-    }
     .intro-name {
         font-size: 1.9rem;
     }
@@ -72,18 +71,8 @@
     .intro-social {
         margin-top: 2rem;
     }
-    .experience {
-        margin: 0;
-    }
-    .education {
-        margin: 0 0 4rem 0;
-    }
     .section-title {
         font-size: 1.75rem;
-    }
-    .header {
-        padding-left: 1rem;
-        padding-right: 1rem;
     }
     .header .nav-menu {
         position: fixed;
