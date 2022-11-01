@@ -6,7 +6,7 @@ export const projects: ProjectData[] = [
     description: 'Personal blog where I write building backend Web applications',
     githubLink: 'https://github.com/tericcabre/blog-tutorials',
     stacks: ['Node.js', 'Java', 'Spring Boot', 'AWS', 'Docker', 'NoSQL', 'TypeScript', 'CI/CD'],
-    title: 'Teco Blog',
+    title: 'Teco Tutorials',
   },
   {
     demoLink: 'https://www.sharingan.dev',
