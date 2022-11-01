@@ -22,7 +22,7 @@ const fetchBlogPosts = async () => {
       fields: 'uuid,title,url,feature_image,published_at',
       filter: 'published_at:-null',
       include: 'tags',
-      limit: 3,
+      limit: 4,
       order: 'published_at DESC',
     })
     .catch((err: any) => {
