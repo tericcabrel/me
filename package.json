@@ -1,42 +1,37 @@
 {
-  "name": "tericcabrel",
+  "name": "me",
   "description": "My personal website",
-  "version": "1.0.0",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "next",
     "build": "next build",
-    "start": "next start",
-    "type:check": "tsc",
-    "lint": "eslint --fix"
+    "dev": "next dev",
+    "lint": "biome check .",
+    "lint:fix": "biome check . --write",
+    "start": "next start"
   },
   "dependencies": {
-    "@tryghost/content-api": "^1.11.4",
-    "next": "12.3.1",
-    "next-seo": "^5.8.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scroll": "^1.8.8"
+    "@radix-ui/react-slot": "1.2.3",
+    "@tryghost/content-api": "1.12.0",
+    "class-variance-authority": "0.7.1",
+    "clsx": "2.1.1",
+    "lucide-react": "0.539.0",
+    "next": "15.4.6",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "tailwind-merge": "3.3.1"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^5.0.0",
-    "@types/node": "^18.11.4",
-    "@types/react": "^18.0.22",
-    "@types/react-dom": "^18.0.7",
-    "@types/react-scroll": "^1.8.4",
-    "@types/tryghost__content-api": "^1.3.11",
-    "@typescript-eslint/eslint-plugin": "^5.41.0",
-    "@typescript-eslint/parser": "^5.41.0",
-    "eslint": "^8.26.0",
-    "eslint-config-next": "^13.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-react": "7.31.10",
-    "eslint-plugin-sort-destructure-keys": "^1.4.0",
-    "postcss-preset-env": "^7.8.2",
-    "prettier": "^2.7.1",
-    "tailwindcss": "^3.2.1",
-    "ts-node": "^10.9.1",
-    "typescript": "4.8.4"
+    "@biomejs/biome": "2.2.0",
+    "@tailwindcss/postcss": "4.1.12",
+    "@types/node": "24.3.0",
+    "@types/react": "19.1.10",
+    "@types/react-dom": "19.1.7",
+    "@types/tryghost__content-api": "1.3.17",
+    "postcss": "8.5.6",
+    "tailwindcss": "4.1.12",
+    "tw-animate-css": "1.3.7",
+    "typescript": "5.9.2"
   },
-  "license": "MIT"
+  "packageManager": "yarn@4.9.2"
 }
