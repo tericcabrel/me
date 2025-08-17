@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { DM_Sans } from 'next/font/google';
-import { GoogleAnalytics } from '@/components/google-analytics';
+import { GoogleAnalytics } from '@next/third-parties/google';
 import '@/styles/globals.css';
 
 const dmSans = DM_Sans({
@@ -8,6 +8,7 @@ const dmSans = DM_Sans({
   display: 'swap',
   variable: '--font-dm-sans',
 });
+const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GA_ID;
 
 const url = process.env.NEXT_PUBLIC_WEB_URL;
 const description = [
@@ -58,7 +59,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} antialiased`}>
       <body className="font-sans">
-        <GoogleAnalytics />
+        {GA_TRACKING_ID && <GoogleAnalytics gaId={GA_TRACKING_ID} />}
         {children}
       </body>
     </html>

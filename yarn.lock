@@ -459,6 +459,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@next/third-parties@npm:15.4.6":
+  version: 15.4.6
+  resolution: "@next/third-parties@npm:15.4.6"
+  dependencies:
+    third-party-capital: "npm:1.0.20"
+  peerDependencies:
+    next: ^13.0.0 || ^14.0.0 || ^15.0.0
+    react: ^18.2.0 || 19.0.0-rc-de68d2f4-20241204 || ^19.0.0
+  checksum: 10/4987f04eec62ef87ccf793eae916a0e85995d6e533762e5b6d9e1baa476cc09cdc1097edc365a2d85b661f59c2f1455a442526b004aa1c0064f9e587a6f47e0b
+  languageName: node
+  linkType: hard
+
 "@radix-ui/react-compose-refs@npm:1.1.2":
   version: 1.1.2
   resolution: "@radix-ui/react-compose-refs@npm:1.1.2"
@@ -1154,6 +1166,7 @@ __metadata:
   resolution: "me@workspace:."
   dependencies:
     "@biomejs/biome": "npm:2.2.0"
+    "@next/third-parties": "npm:15.4.6"
     "@radix-ui/react-slot": "npm:1.2.3"
     "@tailwindcss/postcss": "npm:4.1.12"
     "@tryghost/content-api": "npm:1.12.0"
@@ -1496,6 +1509,13 @@ __metadata:
     mkdirp: "npm:^3.0.1"
     yallist: "npm:^5.0.0"
   checksum: 10/12a2a4fc6dee23e07cc47f1aeb3a14a1afd3f16397e1350036a8f4cdfee8dcac7ef5978337a4e7b2ac2c27a9a6d46388fc2088ea7c80cb6878c814b1425f8ecf
+  languageName: node
+  linkType: hard
+
+"third-party-capital@npm:1.0.20":
+  version: 1.0.20
+  resolution: "third-party-capital@npm:1.0.20"
+  checksum: 10/40e2531b428a21f05531fc62ef82859c0071211eff09588baf75d4b525096bbdb4f93e17e2d538849db8d4fc3cceb074933d7be59fddc26f86718fbbe852a97f
   languageName: node
   linkType: hard
 
