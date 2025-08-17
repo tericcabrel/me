@@ -1,0 +1,212 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
+  "vcs": {
+    "clientKind": "git",
+    "defaultBranch": "main",
+    "enabled": true,
+    "useIgnoreFile": true
+  },
+  "files": {
+    "includes": [
+      "**",
+      "!**/package.json",
+      "!**/cdk.out",
+      "!**/.yarn/releases",
+      "!**/node_modules",
+      "!**/.next",
+      "!**/.yarn",
+      "!src/styles/globals.css"
+    ],
+    "ignoreUnknown": false
+  },
+  "formatter": {
+    "enabled": true,
+    "formatWithErrors": false,
+    "indentStyle": "space",
+    "lineEnding": "lf",
+    "lineWidth": 120
+  },
+  "javascript": {
+    "formatter": {
+      "arrowParentheses": "always",
+      "bracketSameLine": true,
+      "quoteProperties": "asNeeded",
+      "quoteStyle": "single",
+      "semicolons": "always",
+      "trailingCommas": "all"
+    },
+    "globals": ["chrome", "browser", "test", "it", "expect", "vi", "describe", "beforeEach", "afterEach"],
+    "jsxRuntime": "reactClassic"
+  },
+  "css": {
+    "parser": {
+      "cssModules": true
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "a11y": {
+        "useSemanticElements": "warn",
+        "useMediaCaption": "off"
+      },
+      "complexity": {
+        "noExcessiveCognitiveComplexity": {
+          "level": "error",
+          "options": {
+            "maxAllowedComplexity": 20
+          }
+        },
+        "noUselessUndefinedInitialization": "error",
+        "useDateNow": "error",
+        "useSimplifiedLogicExpression": "off",
+        "noExcessiveNestedTestSuites": "error",
+        "noForEach": "error",
+        "noUselessStringConcat": "error"
+      },
+      "correctness": {
+        "noUndeclaredDependencies": "off", // Doesn't work with Monorepos https://github.com/biomejs/biome/issues/2228
+        "noUndeclaredVariables": "error",
+        "noUnusedImports": "error",
+        "noUnusedPrivateClassMembers": "error",
+        "noUnusedVariables": "error",
+        "useHookAtTopLevel": "error",
+        "noNestedComponentDefinitions": "error",
+        "noReactPropAssignments": "error",
+        "noRenderReturnValue": "error",
+        "useExhaustiveDependencies": "error",
+        "useJsonImportAttributes": "error",
+        "useJsxKeyInIterable": {
+          "level": "error",
+          "options": {
+            "checkShorthandFragments": true
+          }
+        },
+        "useUniqueElementIds": "off"
+      },
+      "nursery": {
+        "noSecrets": "off",
+        "noFloatingPromises": "error",
+        "noNextAsyncClientComponent": "error",
+        "noNonNullAssertedOptionalChain": "error",
+        "noUnnecessaryConditions": "warn",
+        "noUselessUndefined": "error",
+        "useAnchorHref": "error",
+        "useConsistentTypeDefinitions": {
+          "level": "error",
+          "options": {
+            "style": "type"
+          }
+        },
+        "useExhaustiveSwitchCases": "error",
+        "useMaxParams": "error",
+        "useReactFunctionComponents": "error"
+      },
+      "performance": {
+        "noBarrelFile": "error",
+        "noReExportAll": "error",
+        "noNamespaceImport": "warn",
+        "noAccumulatingSpread": "warn",
+        "noAwaitInLoops": "error",
+        "noDelete": "error",
+        "noImgElement": "error",
+        "useTopLevelRegex": "error"
+      },
+      "recommended": true,
+      "style": {
+        "noNamespace": "error",
+        "noNegationElse": "error",
+        "noYodaExpression": "error",
+        "useBlockStatements": "error",
+        "useCollapsedElseIf": "error",
+        "useConsistentArrayType": "error",
+        "useExplicitLengthCheck": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {}
+        },
+        "useForOf": "error",
+        "useNamingConvention": {
+          "level": "warn",
+          "options": {
+            "conventions": [
+              {
+                "formats": ["CONSTANT_CASE", "camelCase"],
+                "selector": {
+                  "kind": "objectLiteralProperty"
+                }
+              }
+            ]
+          }
+        },
+        "useShorthandAssign": "error",
+        "noEnum": "error",
+        "noNestedTernary": "error",
+        "useAtIndex": "error",
+        "useConsistentMemberAccessibility": "error",
+        "noDefaultExport": "warn",
+        "noExportedImports": "error",
+        "noHeadElement": "error",
+        "noInferrableTypes": "error",
+        "noMagicNumbers": "error",
+        "noParameterAssign": {
+          "level": "error",
+          "options": {
+            "propertyAssignment": "allow"
+          }
+        },
+        "noSubstr": "error",
+        "noUnusedTemplateLiteral": "error",
+        "noUselessElse": "error",
+        "useAsConstAssertion": "error",
+        "useCollapsedIf": "error",
+        "useConsistentCurlyBraces": "error",
+        "useConsistentObjectDefinitions": "error",
+        "useDefaultParameterLast": "error",
+        "useDefaultSwitchClause": "error",
+        "useExponentiationOperator": "error",
+        "useExportsLast": "error",
+        "useNumericSeparators": "error",
+        "useReadonlyClassProperties": "error",
+        "useSelfClosingElements": "error",
+        "useThrowNewError": "error",
+        "useThrowOnlyError": "error",
+        "useTrimStartEnd": "error"
+      },
+      "suspicious": {
+        "noEmptyBlockStatements": "error",
+        "noEvolvingTypes": "error",
+        "noSkippedTests": "error",
+        "useAwait": "error",
+        "noConsole": {
+          "level": "warn",
+          "options": {
+            "allow": ["info", "warn", "error", "debug"]
+          }
+        },
+        "noAlert": "error",
+        "noDuplicateTestHooks": "error",
+        "noExportsInTest": "error",
+        "noFocusedTests": "error",
+        "noMisplacedAssertion": "error",
+        "noVar": "error",
+        "useErrorMessage": "error"
+      }
+    }
+  },
+  "overrides": [
+    {
+      "includes": ["apps/backend/**"], // This settings does not work, I add to define it in the root
+      "javascript": {
+        "jsxRuntime": "reactClassic"
+      }
+    }
+  ]
+}
