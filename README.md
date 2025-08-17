@@ -13,6 +13,17 @@ My personal website built with Next.js, TypeScript, and Tailwind CSS.
 - 📊 Google Analytics integration
 - 🔍 SEO optimized
 
+## Tech Stack
+
+- **Framework:** Next.js 15 
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS 4
+- **UI Components:** shadcn/ui
+- **Analytics:** Google Analytics 4
+- **Deployment:** Vercel (recommended)
+- **Linting:** Biome
+
+
 ## Google Analytics Setup
 
 This project includes Google Analytics 4 (GA4) integration for tracking page views and user interactions.
@@ -44,11 +55,6 @@ This project includes Google Analytics 4 (GA4) integration for tracking page vie
 - The tracking respects user privacy and only works when the `NEXT_PUBLIC_GA_ID` is set
 - **Development mode protection**: Analytics are disabled in development (`NODE_ENV !== 'production`) to prevent test data from polluting your analytics
 
-### Files involved
-
-- `components/google-analytics.tsx` - Main GA component and A utility functions
-- `app/layout.tsx` - Where GA is integrated
-
 ## Development
 
 ```bash
@@ -63,11 +69,14 @@ yarn build
 
 # Start production server
 yarn start
+
+# Lint the project
+yarn lint
 ```
 
 ## Environment Variables
 
-Create a `.env.local` file with the following variables:
+Create a `.env.local` fil from `.env.example` and update the variables with your values
 
 ```env
 # Google Analytics
@@ -93,7 +102,6 @@ personal-website/
 │   │   ├── about.tsx           # About section component
 │   │   ├── articles.tsx        # Articles/blog posts component
 │   │   ├── footer.tsx          # Footer component
-│   │   ├── google-analytics.tsx # Google Analytics integration
 │   │   ├── header.tsx          # Header component
 │   │   ├── hero.tsx            # Hero section component
 │   │   ├── projects.tsx        # Projects showcase component
@@ -111,16 +119,6 @@ personal-website/
 ├── biome.jsonc                 # Biome linting and formatting config
 └── README.md                   # Project documentation
 ```
-
-## Tech Stack
-
-- **Framework:** Next.js 15
-- **Language:** TypeScript
-- **Styling:** Tailwind CSS 4
-- **UI Components:** shadcn/ui
-- **Analytics:** Google Analytics 4
-- **Deployment:** Vercel (recommended)
-- **Linting:** Biome
 
 ## License
 
