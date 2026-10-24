@@ -2,11 +2,11 @@ import { AwsIcon } from './icons/stack/aws';
 import { DatadogIcon } from './icons/stack/datadog';
 import { DockerIcon } from './icons/stack/docker';
 import { GithubActionsIcon } from './icons/stack/github-actions';
-import { GraphqlIcon } from './icons/stack/graphql';
+import { GoIcon } from './icons/stack/go';
 import { MicroserviceIcon } from './icons/stack/microservice';
 import { MongoIcon } from './icons/stack/mongo';
-import { MysqlIcon } from './icons/stack/mysql';
 import { NodeIcon } from './icons/stack/node';
+import { PostgresIcon } from './icons/stack/postgres';
 import { ReactIcon } from './icons/stack/react';
 import { TerraformIcon } from './icons/stack/terraform';
 import { TypescriptIcon } from './icons/stack/typescript';
@@ -16,13 +16,13 @@ const technologies = [
   { name: 'CI/CD', icon: GithubActionsIcon, title: 'GitHub Actions' },
   { name: 'Docker', icon: DockerIcon, title: 'Docker' },
   { name: 'EDA', icon: MicroserviceIcon, title: 'Event Driven Architecture' },
-  { name: 'GraphQL', icon: GraphqlIcon, title: 'GraphQL' },
+  { name: 'Go', icon: GoIcon, title: 'Go' },
   { name: 'IaC', icon: TerraformIcon, title: 'Infrastructure as Code' },
   { name: 'NoSQL', icon: MongoIcon, title: 'MongoDB' },
   { name: 'Node.js', icon: NodeIcon, title: 'Node.js' },
   { name: 'Observability', icon: DatadogIcon, title: 'Datadog' },
+  { name: 'Postgres', icon: PostgresIcon, title: 'PostgreSQL' },
   { name: 'React', icon: ReactIcon, title: 'React' },
-  { name: 'SQL', icon: MysqlIcon, title: 'MySQL' },
   { name: 'TypeScript', icon: TypescriptIcon, title: 'TypeScript' },
 ];
 

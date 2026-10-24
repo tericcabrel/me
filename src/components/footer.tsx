@@ -12,7 +12,7 @@ export function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Eric Cabrel TIOGO</h3>
             <p className="text-background/80 leading-relaxed">
-              Software engineer passionate about building great web applications and sharing knowledge with the people.
+              Software engineer building distributed systems and writing about how they work.
             </p>
           </div>
 

@@ -15,7 +15,7 @@ My personal website built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Tech Stack
 
-- **Framework:** Next.js 15 
+- **Framework:** Next.js 16
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS 4
 - **UI Components:** shadcn/ui
@@ -37,9 +37,11 @@ This project includes Google Analytics 4 (GA4) integration for tracking page vie
 
 2. **Add your Measurement ID to environment variables:**
    Create a `.env.local` file in the root directory and add:
+
    ```env
    NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
    ```
+
    Replace `G-XXXXXXXXXX` with your actual Measurement ID.
 
 3. **Verify the setup:**

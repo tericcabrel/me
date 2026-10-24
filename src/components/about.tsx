@@ -28,12 +28,12 @@ export function About() {
 
             <div className="grid grid-cols-2 gap-4 pt-4">
               <div className="text-center p-4 bg-background rounded-lg">
-                <div className="text-2xl font-bold text-primary">07</div>
+                <div className="text-2xl font-bold text-primary">08</div>
                 <div className="text-sm text-muted-foreground">Years Experience</div>
               </div>
               <div className="text-center p-4 bg-background rounded-lg">
-                <div className="text-2xl font-bold text-primary">03</div>
-                <div className="text-sm text-muted-foreground">OSS Projects</div>
+                <div className="text-2xl font-bold text-primary">Backend</div>
+                <div className="text-sm text-muted-foreground">Distributed systems</div>
               </div>
               <div className="text-center p-4 bg-background rounded-lg">
                 <div className="text-2xl font-bold text-primary">125+</div>

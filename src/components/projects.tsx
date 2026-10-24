@@ -24,7 +24,6 @@ const projects = [
     image: '/snipcode.png',
     tags: ['Node.js', 'React', 'MySQL', 'AWS', 'GraphQL', 'Docker', 'Terraform'],
     github: 'tericcabrel/snipcode',
-    demo: 'https://snipcode.dev',
     stars: 0,
   },
   {
@@ -37,11 +36,12 @@ const projects = [
     stars: 0,
   },
   {
-    title: 'Spring User Management',
+    title: 'Keyphrase',
     description: '',
     image: '/placeholder.png',
-    tags: ['Java', 'Spring Boot', 'MongoDB', 'Spring Security', 'Spring Data JPA'],
-    github: 'tericcabrel/spring-user-management',
+    tags: ['Go', 'NLP'],
+    github: 'tericcabrel/keyphrase',
+    demo: 'https://keyphrase.tericcabrel.com',
     stars: 0,
   },
 ];
@@ -125,12 +125,14 @@ export function Projects({ githubProjects }: { githubProjects: GithubProject[] }
                       Code
                     </a>
                   </Button>
-                  <Button size="sm" asChild>
-                    <a href={project.demo ?? project.url} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4 mx-2" />
-                      Demo
-                    </a>
-                  </Button>
+                  {project.demo && (
+                    <Button size="sm" asChild>
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mx-2" />
+                        Demo
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>

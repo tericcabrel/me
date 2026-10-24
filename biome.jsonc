@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.2.0/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.6.2/schema.json",
   "assist": {
     "actions": {
       "source": {
@@ -55,7 +55,8 @@
     "rules": {
       "a11y": {
         "useSemanticElements": "warn",
-        "useMediaCaption": "off"
+        "useMediaCaption": "off",
+        "useValidAnchor": "error"
       },
       "complexity": {
         "noExcessiveCognitiveComplexity": {
@@ -69,7 +70,9 @@
         "useSimplifiedLogicExpression": "off",
         "noExcessiveNestedTestSuites": "error",
         "noForEach": "error",
-        "noUselessStringConcat": "error"
+        "noUselessStringConcat": "error",
+        "noUselessUndefined": "error",
+        "useMaxParams": "error"
       },
       "correctness": {
         "noUndeclaredDependencies": "off", // Doesn't work with Monorepos https://github.com/biomejs/biome/issues/2228
@@ -89,25 +92,12 @@
             "checkShorthandFragments": true
           }
         },
-        "useUniqueElementIds": "off"
+        "useUniqueElementIds": "off",
+        "noNextAsyncClientComponent": "error"
       },
       "nursery": {
-        "noSecrets": "off",
         "noFloatingPromises": "error",
-        "noNextAsyncClientComponent": "error",
-        "noNonNullAssertedOptionalChain": "error",
-        "noUnnecessaryConditions": "warn",
-        "noUselessUndefined": "error",
-        "useAnchorHref": "error",
-        "useConsistentTypeDefinitions": {
-          "level": "error",
-          "options": {
-            "style": "type"
-          }
-        },
-        "useExhaustiveSwitchCases": "error",
-        "useMaxParams": "error",
-        "useReactFunctionComponents": "error"
+        "useExhaustiveSwitchCases": "error"
       },
       "performance": {
         "noBarrelFile": "error",
@@ -119,7 +109,7 @@
         "noImgElement": "error",
         "useTopLevelRegex": "error"
       },
-      "recommended": true,
+      "preset": "recommended",
       "style": {
         "noNamespace": "error",
         "noNegationElse": "error",
@@ -178,7 +168,14 @@
         "useSelfClosingElements": "error",
         "useThrowNewError": "error",
         "useThrowOnlyError": "error",
-        "useTrimStartEnd": "error"
+        "useTrimStartEnd": "error",
+        "useConsistentTypeDefinitions": {
+          "level": "error",
+          "options": {
+            "style": "type"
+          }
+        },
+        "useReactFunctionComponents": "error"
       },
       "suspicious": {
         "noEmptyBlockStatements": "error",
@@ -197,7 +194,12 @@
         "noFocusedTests": "error",
         "noMisplacedAssertion": "error",
         "noVar": "error",
-        "useErrorMessage": "error"
+        "useErrorMessage": "error",
+        "noNonNullAssertedOptionalChain": "error",
+        "noUnnecessaryConditions": "warn"
+      },
+      "security": {
+        "noSecrets": "off"
       }
     }
   },
